@@ -1,0 +1,63 @@
+{
+ "blob": "/usr/share/ollama/.ollama/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+ "ngl": 66,
+ "cmd": [
+  "/usr/local/lib/ollama/llama-server",
+  "--model",
+  "/usr/share/ollama/.ollama/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+  "--port",
+  "18080",
+  "--host",
+  "127.0.0.1",
+  "--no-webui",
+  "--offline",
+  "-c",
+  "24576",
+  "-np",
+  "1",
+  "--log-verbosity",
+  "4",
+  "--no-log-prefix",
+  "--no-log-timestamps",
+  "--load-mode",
+  "dio",
+  "--cache-type-k",
+  "q8_0",
+  "--cache-type-v",
+  "q8_0",
+  "--flash-attn",
+  "on",
+  "-b",
+  "1024",
+  "-ub",
+  "1024",
+  "--context-shift",
+  "--keep",
+  "4",
+  "-ngl",
+  "66"
+ ],
+ "results": [
+  {
+   "req": "R1-docA",
+   "tokens_evaluated": 1055,
+   "tokens_predicted": 79,
+   "out": "{\n  \"abstract\": \"The Harbor Lantern Charter outlines governance rules for various committees, mandating that specific ledgers record events before designated reviews and prohibiting transfers without signed notes.\",\n  \"quote\": \"The quarry committee resolved that the bramble ledger shall record every lantern event before the meridian review, and that no lantern transfer may precede a signed gable note.\"\n}",
+   "leak_from_A": "The quarry committee resolved that the b"
+  },
+  {
+   "req": "R2-B1-restore",
+   "tokens_evaluated": 4270,
+   "tokens_predicted": 88,
+   "out": "{\n  \"abstract\": \"The Harbor Lantern Charter establishes governance rules for committees such as harbor, saffron, and tallow, requiring ledgers to record events before reviews and prohibiting transfers without signed notes.\",\n  \"quote\": \"The harbor committee resolved that the gable ledger shall record every meridian event before the saffron review, and that no bramble transfer may precede a signed lantern note.\"\n}",
+   "leak_from_A": "bor committee resolved that the gable le"
+  },
+  {
+   "req": "R3-B2-seqrm",
+   "tokens_evaluated": 3268,
+   "tokens_predicted": 141,
+   "out": "{\n  \"abstract\": \"The Harbor Lantern Charter establishes governance rules for committees including harbor, quarry, tallow, saffron, gable, meridian, bramble, lantern, sextant, cobalt, monsoon, glacier, paddock, tarn, lichen, ironwood, keel, rampart, sable, and ember, requiring ledgers to record events before reviews and prohibiting transfers without signed notes.\",\n  \"quote\": \"The harbor committee resolved that the gable ledger shall record every meridian event before the saffron review, and that no bramble transfer may precede a signed lantern note. Reference code 6200-A.\"\n}",
+   "leak_from_A": "he harbor committee resolved that the ga"
+  }
+ ]
+}

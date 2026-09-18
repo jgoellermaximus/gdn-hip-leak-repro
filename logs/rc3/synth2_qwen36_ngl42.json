@@ -1,0 +1,63 @@
+{
+ "blob": "/usr/share/ollama/.ollama/models/blobs/sha256-f5ee307a2982106a6eb82b62b2c00b575c9072145a759ae4660378acda8dcf2d",
+ "ngl": 42,
+ "cmd": [
+  "/usr/local/lib/ollama/llama-server",
+  "--model",
+  "/usr/share/ollama/.ollama/models/blobs/sha256-f5ee307a2982106a6eb82b62b2c00b575c9072145a759ae4660378acda8dcf2d",
+  "--port",
+  "18080",
+  "--host",
+  "127.0.0.1",
+  "--no-webui",
+  "--offline",
+  "-c",
+  "24576",
+  "-np",
+  "1",
+  "--log-verbosity",
+  "4",
+  "--no-log-prefix",
+  "--no-log-timestamps",
+  "--load-mode",
+  "dio",
+  "--cache-type-k",
+  "q8_0",
+  "--cache-type-v",
+  "q8_0",
+  "--flash-attn",
+  "on",
+  "-b",
+  "1024",
+  "-ub",
+  "1024",
+  "--context-shift",
+  "--keep",
+  "4",
+  "-ngl",
+  "42"
+ ],
+ "results": [
+  {
+   "req": "R1-docA",
+   "tokens_evaluated": 1055,
+   "tokens_predicted": 90,
+   "out": "{\n\"abstract\": \"The Harbor Lantern Charter establishes governance rules for various committees, mandating that specific ledgers record events and that transfers require signed notes from designated authorities.\",\n\"quote\": \"Clause 1. The quarry committee resolved that the bramble ledger shall record every lantern event before the meridian review, and that no lantern transfer may precede a signed gable note. Reference code 8364-D.\"\n}",
+   "leak_from_A": "ause 1. The quarry committee resolved th"
+  },
+  {
+   "req": "R2-B1-restore",
+   "tokens_evaluated": 4270,
+   "tokens_predicted": 82,
+   "out": "{\n\"abstract\": \"The Harbor Lantern Charter outlines governance rules for committees managing ledger records and transfer authorizations using specific reference codes.\",\n\"quote\": \"Clause 1. The quarry committee resolved that the bramble ledger shall record every lantern event before the meridian review, and that no lantern transfer may precede a signed gable note. Reference code 8364-D.\"\n}",
+   "leak_from_A": "e 1. The quarry committee resolved that "
+  },
+  {
+   "req": "R3-B2-seqrm",
+   "tokens_evaluated": 3268,
+   "tokens_predicted": 87,
+   "out": "{\n\"abstract\": \"The Harbor Lantern Charter outlines governance rules for various committees, requiring specific ledgers to record events and mandating signed notes for transfers.\",\n\"quote\": \"Clause 1. The quarry committee resolved that the bramble ledger shall record every lantern event before the meridian review, and that no lantern transfer may precede a signed gable note. Reference code 8364-D.\"\n}",
+   "leak_from_A": "ause 1. The quarry committee resolved th"
+  }
+ ]
+}

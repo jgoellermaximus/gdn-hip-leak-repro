@@ -1,0 +1,15 @@
+pid=2885325
+exe=/usr/local/lib/ollama/llama-server
+maps:
+/usr/local/lib/ollama/libggml-base.so.0.20.0
+/usr/local/lib/ollama/libggml-cpu-zen4.so
+/usr/local/lib/ollama/libggml.so.0.20.0
+/usr/local/lib/ollama/libllama-common.so.0.1.0
+/usr/local/lib/ollama/libllama-server-impl.so
+/usr/local/lib/ollama/libllama.so.0.1.0
+/usr/local/lib/ollama/rocm_v7_2/libamdhip64.so.7.2.70201
+/usr/local/lib/ollama/rocm_v7_2/libggml-hip.so
+resolver: fused Gated Delta Net (autoregressive) not supported, set to disabled; fused Gated Delta Net (chunked) not supported, set to disabled
+offload: offloaded 41/42 layers to GPU
+device: using device ROCm0 (Radeon 8060S Graphics)
+ubatch: n_ubatch              = 1024

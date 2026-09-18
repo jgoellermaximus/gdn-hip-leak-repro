@@ -1,0 +1,63 @@
+{
+ "blob": "/usr/share/ollama/.ollama/models/blobs/sha256-f5ee307a2982106a6eb82b62b2c00b575c9072145a759ae4660378acda8dcf2d",
+ "ngl": 41,
+ "cmd": [
+  "/usr/local/lib/ollama/llama-server",
+  "--model",
+  "/usr/share/ollama/.ollama/models/blobs/sha256-f5ee307a2982106a6eb82b62b2c00b575c9072145a759ae4660378acda8dcf2d",
+  "--port",
+  "18080",
+  "--host",
+  "127.0.0.1",
+  "--no-webui",
+  "--offline",
+  "-c",
+  "24576",
+  "-np",
+  "1",
+  "--log-verbosity",
+  "4",
+  "--no-log-prefix",
+  "--no-log-timestamps",
+  "--load-mode",
+  "dio",
+  "--cache-type-k",
+  "q8_0",
+  "--cache-type-v",
+  "q8_0",
+  "--flash-attn",
+  "on",
+  "-b",
+  "1024",
+  "-ub",
+  "1024",
+  "--context-shift",
+  "--keep",
+  "4",
+  "-ngl",
+  "41"
+ ],
+ "results": [
+  {
+   "req": "R1-docA",
+   "tokens_evaluated": 1055,
+   "tokens_predicted": 1,
+   "out": "",
+   "leak_from_A": null
+  },
+  {
+   "req": "R2-B1-restore",
+   "tokens_evaluated": 4270,
+   "tokens_predicted": 1,
+   "out": "",
+   "leak_from_A": null
+  },
+  {
+   "req": "R3-B2-seqrm",
+   "tokens_evaluated": 3268,
+   "tokens_predicted": 79,
+   "out": "{\"abstract\": \"The document outlines the Ember Rampart Review Procedure, detailing resolutions by various committees regarding ledger recordings and transfer restrictions.\", \"quote\": \"Clause 1. The paddock committee resolved that the tarn ledger shall record every rampart event before the glacier review, and that no monsoon transfer may precede a signed tarn note. Reference code 8766-F.\"}",
+   "leak_from_A": null
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "blob": "/usr/share/ollama/.ollama/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+ "ngl": 65,
+ "cmd": [
+  "/usr/local/lib/ollama/llama-server",
+  "--model",
+  "/usr/share/ollama/.ollama/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+  "--port",
+  "18080",
+  "--host",
+  "127.0.0.1",
+  "--no-webui",
+  "--offline",
+  "-c",
+  "24576",
+  "-np",
+  "1",
+  "--log-verbosity",
+  "4",
+  "--no-log-prefix",
+  "--no-log-timestamps",
+  "--load-mode",
+  "dio",
+  "--cache-type-k",
+  "q8_0",
+  "--cache-type-v",
+  "q8_0",
+  "--flash-attn",
+  "on",
+  "-b",
+  "1024",
+  "-ub",
+  "1024",
+  "--context-shift",
+  "--keep",
+  "4",
+  "-ngl",
+  "65"
+ ],
+ "results": [
+  {
+   "req": "R1-docA",
+   "tokens_evaluated": 1055,
+   "tokens_predicted": 300,
+   "out": "{\n  \"title\": \"Harbor Lantern Charter\",\n  \"subject\": \"governance of the harbor lantern committee\",\n  \"clauses\": [\n    {\n      \"id\": 1,\n      \"committee\": \"quarry\",\n      \"ledger\": \"bramble\",\n      \"event\": \"lantern\",\n      \"review\": \"meridian\",\n      \"transfer\": \"lantern\",\n      \"note\": \"gable\",\n      \"reference_code\": \"8364-D\",\n      \"quote\": \"The quarry committee resolved that the bramble ledger shall record every lantern event before the meridian review, and that no lantern transfer may precede a signed gable note.\"\n    },\n    {\n      \"id\": 2,\n      \"committee\": \"tallow\",\n      \"ledger\": \"saffron\",\n      \"event\": \"lantern\",\n      \"review\": \"gable\",\n      \"transfer\": \"harbor\",\n      \"note\": \"tallow\",\n      \"reference_code\": \"8090-E\",\n      \"quote\": \"The tallow committee resolved that the saffron ledger shall record every lantern event before the gable review, and that no harbor transfer may precede a signed tallow note.\"\n    },\n    {\n      \"id\": 3,\n      \"committee\": \"harbor\",\n      \"",
+   "leak_from_A": "arry committee resolved that the bramble"
+  },
+  {
+   "req": "R2-B1-restore",
+   "tokens_evaluated": 4270,
+   "tokens_predicted": 65,
+   "out": "{\n  \"action\": \"extract\",\n  \"entity\": \"Clause 1\",\n  \"quote\": \"The velvet committee resolved that the onyx ledger shall record every onyx event before the falcon review, and that no pumice transfer may precede a signed tundra note.\"\n}",
+   "leak_from_A": null
+  },
+  {
+   "req": "R3-B2-seqrm",
+   "tokens_evaluated": 3268,
+   "tokens_predicted": 79,
+   "out": "{\n  \"abstract\": \"The Ember Rampart Review Procedure outlines resolutions by various committees regarding the recording of events in specific ledgers and the prohibition of transfers preceding signed notes.\",\n  \"quote\": \"The paddock committee resolved that the tarn ledger shall record every rampart event before the glacier review, and that no monsoon transfer may precede a signed tarn note.\"\n}",
+   "leak_from_A": null
+  }
+ ]
+}
